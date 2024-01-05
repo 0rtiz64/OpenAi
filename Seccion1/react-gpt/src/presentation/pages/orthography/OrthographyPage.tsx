@@ -1,5 +1,5 @@
 import React from 'react'
-import { GptMessage,MyMessage } from '../../components/index';
+import { GptMessage,MyMessage, TypingLoader } from '../../components/index';
 
 
 export const OrthographyPage = () => {
@@ -12,6 +12,9 @@ export const OrthographyPage = () => {
           <GptMessage text='Hola. Como puedo ayudarte?' />
 
           <MyMessage text="Hola mundo" />
+
+          <TypingLoader  className="fade-in"/>
+          
         </div>
       </div>
     </div>
