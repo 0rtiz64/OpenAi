@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
 import { menuRoutes } from '../router'
-import { SidebarMenuItem } from '../components/sidebar/SidebarMenuItem'
+import { SidebarMenuItem } from '../components/sidebar/index'
 
 export const DashboardLayout = () => {
   return (
@@ -16,7 +16,10 @@ export const DashboardLayout = () => {
 
         {/* Opciones del menú */}
         {
-          <SidebarMenuItem />
+           menuRoutes.map(option =>(
+            <SidebarMenuItem key = {option.to} {...option} />
+            ))
+          
         }
         
       </nav>

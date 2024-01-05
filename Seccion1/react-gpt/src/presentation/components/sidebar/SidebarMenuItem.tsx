@@ -2,12 +2,19 @@ import React from 'react'
 import { menuRoutes } from '../../router'
 import { NavLink } from 'react-router-dom'
 
-export const SidebarMenuItem = () => {
+interface Props {
+    to: string
+    icon: string
+    title: string
+    description: string
+}
+
+export const SidebarMenuItem = ({to, icon, title, description}:Props) => {
   return (
-    menuRoutes.map(option =>(
-        <NavLink
-        key= {option.to}
-        to={option.to}
+
+    <NavLink
+        
+        to={to}
         className={
           ({isActive})=>
           isActive
@@ -15,16 +22,18 @@ export const SidebarMenuItem = () => {
           : 'flex justify-center items-center hover:bg-gray-800 rounded-md p-2 transition-colors'
         }
         >
-          <i className={`${option.icon} text-2xl mr-4 text-indigo-400`}/>
+          <i className={`${icon} text-2xl mr-4 text-indigo-400`}/>
           <div className='flex flex-col flex-grow'>
             <span className='text-white text-lg font-semibold'>
-              {option.title}
+              {title}
             </span>
             <span className='text-gray-400'>
-              {option.description}
+              {description}
             </span>
           </div>
         </NavLink>
-      ))
+
+
+   
   )
 }
