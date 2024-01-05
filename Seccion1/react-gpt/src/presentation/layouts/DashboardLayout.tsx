@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
 import { menuRoutes } from '../router'
-import { SidebarMenuItem } from '../components/sidebar/index'
+import { SidebarMenuItem } from '../components/index'
 
 export const DashboardLayout = () => {
   return (
