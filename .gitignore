@@ -23,3 +23,41 @@ seccion1/react-gpt/dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+# NEST SECCION 1 ********************************
+# compiled output
+Seccion1/nest-gpt/dist
+Seccion1/nest-gpt/node_modules
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS
+.DS_Store
+
+# Tests
+Seccion1/nest-gpt/coverage
+Seccion1/nest-gpt/.nyc_output
+
+# IDEs and editors
+Seccion1/nest-gpt/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
