@@ -29,6 +29,7 @@ seccion1/react-gpt/dist-ssr
 # compiled output
 Seccion1/nest-gpt/dist
 Seccion1/nest-gpt/node_modules
+Seccion1/nest-gpt/.env
 
 # Logs
 logs
